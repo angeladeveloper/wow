@@ -9,6 +9,7 @@ const options = { method: 'GET', headers: { Accept: 'application/json' } };
 
 // get the content. 
 wowBtn.addEventListener('click', e => {
+
   console.log(`I clicked`);
 
   fetch('https://owen-wilson-wow-api.herokuapp.com/wows/random', options)
@@ -36,7 +37,7 @@ function renderWow(audioUrl, movieTitle, moviePoster) {
     const audio = document.querySelector('audio');
     // document.querySelector('img').src = moviePoster;
     video.classList.remove('hidden');
-    audio.classList.add('hidden');
+    // audio.classList.add('hidden');
     document.querySelector('video').src = moviePoster;
   })
 }
